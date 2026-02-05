@@ -1,6 +1,7 @@
 import { useState } from "react";
-import LoginCard from "../cards/LoginCard";
-import RegisterCard from "../cards/RegisterCard";
+
+import LoginCard from "../WebDesign/cards/LoginCard";
+import RegisterCard from "../WebDesign/cards/RegisterCard";
 
 export default function AuthModal({ onClose }) {
   const [mode, setMode] = useState("login");

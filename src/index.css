@@ -1,5 +1,79 @@
 @import "tailwindcss";
 
+
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
+}
+
+.input {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 8px 12px;
+  border-radius: 6px;
+  outline: none;
+  color: white;
+}
+
+.input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Make SVG gradients visible and clean */
+.recharts-surface {
+  overflow: visible !important;
+}
+
+
+/* Softer grid lines like Figma */
+.recharts-cartesian-grid line {
+  stroke: rgba(255, 255, 255, 0.06);
+}
+
+/* Better tooltip look */
+.recharts-tooltip-wrapper {
+  backdrop-filter: blur(6px);
+}
+
+/* Remove default focus outlines */
+.recharts-wrapper *:focus {
+  outline: none;
+}
+
+
+/* Fix dropdown popup visibility */
+
+.chart-bg .select-popup,
+.chart-bg .dropdown-popup,
+.chart-bg [role="listbox"] {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+
+  color: #ffffff !important;
+  opacity: 1 !important;
+
+  z-index: 9999 !important;
+}
+
+
+/* Popup items */
+
+.chart-bg .select-popup li,
+.chart-bg .dropdown-popup li,
+.chart-bg [role="option"] {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  padding: 8px 12px;
+}
+
+
+/* Hover effect */
+
+.chart-bg .select-popup li:hover,
+.chart-bg .dropdown-popup li:hover,
+.chart-bg [role="option"]:hover {
+  background: rgba(79, 209, 255, 0.15);
 }
