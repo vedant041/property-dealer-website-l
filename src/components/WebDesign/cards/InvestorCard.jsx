@@ -78,7 +78,7 @@ export default function InvestorCard() {
   const { shareholders } = investorData;
 
   return (
-    <div className="bg-[rgba(49,51,55,0.1)] backdrop-blur-sm border border-white/15 rounded-[24px] p-6 flex flex-col gap-5 text-white h-full">
+    <div className="bg-[rgba(49,51,55,0.1)] backdrop-blur-[2px] border border-white/15 rounded-[24px] p-6 flex flex-col gap-5 text-white h-full">
 
       {/* TITLE */}
       <h2 className="text-lg font-semibold">
@@ -195,14 +195,14 @@ export default function InvestorCard() {
       <div className="flex gap-10">
 
         <button
-          onClick={() => navigate("/buy-share")}
+          onClick={() => navigate("/buy-shares")}
           className="flex-1 bg-[#D7E4F8] hover:bg-[#C3D6F3] rounded-lg py-1.5 font-medium text-[#1F3A5F]"
         >
           Buy Shares
         </button>
 
         <button
-          onClick={() => navigate("/sell-share")}
+          onClick={() => navigate("/sell-shares")}
           className="flex-1 bg-[#FFD24A] hover:bg-[#FACC15] transition rounded-lg py-1.5 font-medium text-black"
         >
           Sell Shares

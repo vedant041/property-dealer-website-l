@@ -6,19 +6,32 @@ export default function ShareCounter() {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex items-center gap-3">
-      <span className="text-yellow-400">Shares</span>
+    <div className="flex items-end gap-10">
 
-      <div className="flex items-center bg-white/10 rounded-md">
-        <button onClick={() => dispatch(decrement())} className="px-3">−</button>
-        <span className="px-4">{count}</span>
-        <button onClick={() => dispatch(increment())} className="px-3">+</button>
+      {/* SHARES BLOCK */}
+      <div>
+        <div className="flex items-center h-[42px] bg-white/10 rounded-lg">
+          <button
+            onClick={() => dispatch(decrement())}
+            className="px-4 text-[18px] hover:text-[#2ED3C6] transition"
+          >
+            −
+          </button>
+
+          <span className="px-6 text-[16px] font-medium">
+            {count}
+          </span>
+
+          <button
+            onClick={() => dispatch(increment())}
+            className="px-4 text-[18px] hover:text-[#2ED3C6] transition"
+          >
+            +
+          </button>
+        </div>
       </div>
 
-      <span className="text-yellow-400 ml-6">Amount</span>
-      <div className="bg-white/10 px-4 py-2 rounded-md">
-        ₹ {(count * pricePerShare).toLocaleString()}
-      </div>
+    
     </div>
   );
 }

@@ -13,6 +13,7 @@ export default function PropertyInfoCard() {
         flex
         flex-col
         gap-[10px]
+        backdrop-blur-[4px]
       "
       style={{
         background: "rgba(31,58,95,0.10)", // #1F3A5F @ 10%

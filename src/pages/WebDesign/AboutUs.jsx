@@ -5,14 +5,27 @@ export default function AboutUs() {
   return (
     <div className="relative min-h-screen text-white">
       {/* BACKGROUND */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/Backgroundimg.png"
-          className="w-full h-full object-cover"
-          alt="bg"
-        />
-        <div className="absolute inset-0 bg-[#07182F]/60 backdrop-blur-[2px]" />
-      </div>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="fixed top-0 left-0 w-full h-full object-cover -z-20"
+      >
+        <source src="/video6.mp4" type="video/mp4" />
+      </video>
+
+      {/* ✅ Gradient Overlay */}
+      <div
+        className="
+          fixed inset-0 -z-10
+          bg-gradient-to-b
+          from-[rgba(11,31,58,0.35)]
+          via-[rgba(11,31,58,0.25)]
+          to-[rgba(11,31,58,0.45)]
+        "
+      />
 
       <Navbar />
 
@@ -25,7 +38,7 @@ export default function AboutUs() {
           className="
             grid grid-cols-[1.4fr_1fr] gap-10
             bg-[#1F3A5F]/20
-            backdrop-blur-xl
+            backdrop-blur-[4px]
             border border-white/30
             rounded-[16px]
             p-10
@@ -79,7 +92,7 @@ export default function AboutUs() {
               key={i}
               className="
                 bg-[#1F3A5F]/20
-                backdrop-blur-xl
+                backdrop-blur-[4px]
                 border border-white/30
                 rounded-[16px]
                 p-8
@@ -131,7 +144,7 @@ export default function AboutUs() {
                 key={i}
                 className="
                   bg-[#1F3A5F]/25
-                  backdrop-blur-xl
+                  backdrop-blur-[4px]
                   border border-white/30
                   rounded-[16px]
                   p-6
@@ -162,7 +175,7 @@ export default function AboutUs() {
             className="
               grid grid-cols-2 gap-6
               bg-[#1F3A5F]/25
-              backdrop-blur-xl
+              backdrop-blur-[4px]
               border border-white/30
               rounded-[16px]
               p-6

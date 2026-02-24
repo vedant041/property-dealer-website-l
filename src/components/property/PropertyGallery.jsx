@@ -3,9 +3,9 @@ import { useState } from "react";
 export default function PropertyGallery() {
   const images = [
     "/2BHKimg1.png",
-    "/2BHKimg2.png",
-    "/2BHKimg3.png",
-    "/2BHKimg4.png",
+    "/Interior4.jpg",
+    "/Interior2.jpg",
+    "/Interior5.jpg",
   ];
 
   const [active, setActive] = useState(0);
@@ -39,7 +39,7 @@ export default function PropertyGallery() {
           className="
             absolute left-4 top-1/2 -translate-y-1/2
             w-[34px] h-[34px] rounded-[8px]
-            bg-white/40 backdrop-blur-sm
+            bg-white/40 backdrop-blur-[4px]
             border border-white/40
             shadow-sm
             flex items-center justify-center
@@ -68,7 +68,7 @@ export default function PropertyGallery() {
           className="
             absolute right-4 top-1/2 -translate-y-1/2
             w-[34px] h-[34px] rounded-[8px]
-            bg-white/40 backdrop-blur-sm
+            bg-white/40 backdrop-blur-[4px]
             border border-white/40
             shadow-sm
             flex items-center justify-center

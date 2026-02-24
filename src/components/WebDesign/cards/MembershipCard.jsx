@@ -2,7 +2,7 @@ export default function MembershipCard() {
   return (
     <div className="flex flex-col gap-6">
       {/* ===== CARD 1 : BUDHIS FOUNDATION MEMBERSHIP ===== */}
-      <div className="bg-[rgba(31,58,95,0.1)] backdrop-blur-sm border border-white/15 rounded-[24px] p-6">
+      <div className="bg-[rgba(31,58,95,0.1)] backdrop-blur-[2px] border border-white/15 rounded-[24px] p-6">
         <h1 className="text-[18px] font-semibold mb-4">
           Budhis Foundation Membership
         </h1>

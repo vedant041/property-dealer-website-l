@@ -7,7 +7,7 @@ export default function MissionVisionCard() {
         rounded-[15px]
         border
         border-white/30
-        backdrop-blur-sm
+        backdrop-blur-[2px]
         flex
         flex-col
         overflow-hidden

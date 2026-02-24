@@ -6,7 +6,7 @@ export default function AboutProperty() {
         rounded-[15px]
         border
         border-white/30
-        backdrop-blur-md
+        backdrop-blur-[4px]
         px-6
         py-4
         text-white

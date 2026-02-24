@@ -128,7 +128,7 @@ export default function PropertyLayoutCard() {
         h-[800px]
         rounded-[15px]
         border border-white/30
-        backdrop-blur-md
+        backdrop-blur-[2px]
         p-6
         text-white
         flex flex-col gap-4

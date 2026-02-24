@@ -8,7 +8,7 @@ export default function ContactFormCard() {
         rounded-[16px]
         border border-white/30
         bg-[#1F3A5F1A]/10
-        backdrop-blur-sm
+        backdrop-blur-[4px]
         p-4
       "
     >
@@ -23,7 +23,7 @@ export default function ContactFormCard() {
           rounded-[14px]
           border border-white/20
           bg-[#FFFFFF24]/25
-          backdrop-blur-sm
+          backdrop-blur-[4px]
           p-6
         "
       >

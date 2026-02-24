@@ -10,7 +10,7 @@ export default function Footer() {
         items-center
         justify-center
         relative
-        backdrop-blur-md
+        backdrop-blur-[4px]
       "
       style={{
         background: "rgba(41,53,77,0.12)",
