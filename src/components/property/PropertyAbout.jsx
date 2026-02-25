@@ -20,7 +20,7 @@ export default function PropertyAbout() {
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[14px] leading-relaxed text-white/90">
+      <p className="text-[18px] font-semibold leading-relaxed text-white/90">
         This well-maintained 2 BHK apartment in Andheri East offers spacious
         interiors, natural light, and easy access to major roads and daily
         conveniences. Ideal for families or working professionals looking for a

@@ -42,21 +42,20 @@ export default function PropertyDetails() {
       </h3>
 
       {/* DETAILS LIST */}
-      <div className="flex flex-col gap-[14px] text-[14px]">
-        {details.map(([label, value]) => (
-          <div
-            key={label}
-            className="grid grid-cols-[1.3fr_1fr] items-start"
-          >
-            <span className="text-white/80">
-              {label}
-            </span>
-            <span className="text-white text-right">
-              {value}
-            </span>
-          </div>
-        ))}
-      </div>
+     <div className="grid grid-cols-[240px_1fr] gap-y-[18px] text-[14px]">
+
+  {details.map(([label, value]) => (
+    <div key={label} className="contents">
+      <span className="text-white/80">
+        {label}
+      </span>
+      <span className="text-white">
+        {value}
+      </span>
+    </div>
+  ))}
+
+</div>
     </div>
   );
 }

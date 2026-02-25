@@ -4,6 +4,7 @@ export default function PropertyHeader({ mode = "buy" }) {
   return (
     <div
       className="
+        mt-8
         w-[1312px]
         rounded-[12px]
         bg-[#1a2332]
@@ -21,16 +22,7 @@ export default function PropertyHeader({ mode = "buy" }) {
           className="w-full h-full object-cover rounded-lg"
           alt="property"
         />
-        <span
-          className="
-            absolute top-2 left-2
-            bg-[#4fd1c5]
-            text-[10px]
-            px-2 py-[2px]
-            rounded-sm
-            font-bold text-black uppercase
-          "
-        >
+        <span className="absolute top-2 left-2 bg-[#4fd1c5] text-[10px] px-2 py-[2px] rounded-sm font-bold text-black uppercase">
           Residential
         </span>
       </div>
@@ -54,72 +46,73 @@ export default function PropertyHeader({ mode = "buy" }) {
         </p>
       </div>
 
-      {/* 3. STATS & CONTROLS SECTION */}
-      <div className="flex-1 flex flex-col justify-between h-[150px] ml-4">
-        
-        {/* TOP STATS */}
-        <div className="flex justify-between items-start">
-          
+      {/* 3. STATS + CONTROLS SECTION */}
+      <div className="flex-1 flex flex-col ml-4 justify-center gap-8">
+
+        {/* TOP STATS ROW */}
+        <div className="flex items-start justify-between">
+
           <StatItem label="Price per share" value="₹ 1342" />
           <StatItem label="Shares" value="25/50" isShares />
           <StatItem label="Expected return" value="49.08%" />
 
-          {/* SOLD + BUTTON BLOCK */}
-          <div className="w-[150px] flex flex-col gap-3">
-            
-            <div>
-              <p className="text-[12px] text-gray-400 mb-1">Sold</p>
-              <div className="flex items-center gap-3">
-                <span className="text-[18px] font-semibold">50%</span>
-                <div className="flex-1 h-[4px] bg-gray-700 rounded-full overflow-hidden">
-                  <div className="w-1/2 h-full bg-[#4fd1c5]"></div>
-                </div>
+          {/* SOLD */}
+          <div className="w-[180px]">
+            <p className="text-[12px] text-gray-400 mb-1">Sold</p>
+            <div className="flex items-center gap-3">
+              <span className="text-[18px] font-semibold">50%</span>
+              <div className="w-[100px] h-[6px] bg-gray-600 rounded-full overflow-hidden">
+                <div className="w-1/2 h-full bg-[#4fd1c5]"></div>
               </div>
             </div>
-
-            {/* BUY / SELL BUTTON */}
-            <button
-              className="
-                w-full
-                h-[48px]
-                rounded-[4px]
-                bg-[#DFAF5B]
-                hover:bg-[#c99e52]
-                text-[16px]
-                font-bold
-                text-black
-                shadow-lg
-                transition-all
-              "
-            >
-              {mode === "sell" ? "Sell Now" : "Buy Now"}
-            </button>
           </div>
 
         </div>
 
-        {/* BOTTOM CONTROLS */}
-        <div className="flex gap-8 items-end">
-          
-          <div className="flex flex-col gap-2">
-            <span className="text-[#C0944D] text-[12px] font-medium">
-              Shares
-            </span>
-            <ShareCounter />
-          </div>
+        {/* BOTTOM CONTROLS ROW */}
+        <div className="flex items-end justify-between">
 
-          <div className="flex flex-col gap-2">
-            <span className="text-[#C0944D] text-[12px] font-medium">
-              Amount
-            </span>
+          {/* LEFT CONTROLS */}
+          <div className="flex gap-10 items-end">
 
-            <div className="bg-[#2d3748] border border-white/5 rounded-[4px] px-3 py-2 flex items-center justify-between w-[160px] h-[40px]">
-              <span className="text-gray-400 text-[14px]">₹</span>
-              <span className="text-[18px] font-medium ml-2">
-                10,736
+            <div className="flex flex-col gap-2">
+              <span className="text-[#C0944D] text-[12px] font-medium">
+                Shares
               </span>
+              <ShareCounter />
             </div>
+
+            <div className="flex flex-col gap-2">
+              <span className="text-[#C0944D] text-[12px] font-medium">
+                Amount
+              </span>
+
+              <div className="bg-[#2d3748] border border-white/5 rounded-[4px] px-3 py-2 flex items-center justify-between w-[170px] h-[42px]">
+                <span className="text-gray-400 text-[14px]">₹</span>
+                <span className="text-[18px] font-medium ml-2">
+                  10,736
+                </span>
+              </div>
+            </div>
+
           </div>
+
+          {/* BUTTON */}
+          <button
+            className="
+              w-[150px]
+              h-[42px]
+              rounded-[6px]
+              bg-[#DFAF5B]
+              hover:bg-[#c99e52]
+              text-[15px]
+              font-semibold
+              text-black
+              transition-all
+            "
+          >
+            {mode === "sell" ? "Sell Now" : "Buy Now"}
+          </button>
 
         </div>
 

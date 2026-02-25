@@ -1,8 +1,8 @@
 const images = [
   "/2BHKimg2.png",
-  "/2BHKimg1.png",
-  "/2BHKimg1.png",
-  "/2BHKimg1.png",
+  "/Interior1.jpg",
+  "/Interior5.jpg",
+  "/Interior4.jpg",
 ];
 
 export default function PropertyImages() {
